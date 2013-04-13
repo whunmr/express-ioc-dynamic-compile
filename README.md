@@ -1,4 +1,4 @@
-express-ioc-dynamic-compile
-===========================
+express-ioc
+===========
 
-express-ioc-dynamic-compile
+Reinvent ioc

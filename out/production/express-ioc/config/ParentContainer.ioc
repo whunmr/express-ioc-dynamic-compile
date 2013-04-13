@@ -1,0 +1,13 @@
+import com.dummy.movie.FooMovieFinder;
+import com.expressioc.Container;
+
+public class ParentContainer extends com.expressioc.BaseContainer {
+    public FooMovieFinder movieFinder;
+
+    public void init(Container parent) {
+        super.init(parent);
+
+        movieFinder = new FooMovieFinder();
+        movieFinder.setFileName("setter_inject_parameter");
+    }
+}

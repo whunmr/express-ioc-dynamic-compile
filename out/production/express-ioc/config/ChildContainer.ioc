@@ -1,0 +1,14 @@
+import com.dummy.movie.MovieLister;
+import com.dummy.movie.MovieFinder;
+import com.expressioc.Container;
+
+public class ChildContainer extends com.expressioc.BaseContainer {
+
+    public MovieLister movieLister;
+
+    public void init(Container parent) {
+        super.init(parent);
+
+        movieLister = new MovieLister((MovieFinder)refParent("movieFinder"));
+    }
+}
